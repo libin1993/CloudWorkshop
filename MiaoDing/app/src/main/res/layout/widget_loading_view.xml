@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:indicatorColor="@android:color/darker_gray"
+            app:indicatorName="BallSpinFadeLoaderIndicator"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_load_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="#F2F2F2">
+
+        <ImageView
+            android:layout_width="198dp"
+            android:layout_height="109.5dp"
+            android:src="@mipmap/loading_error"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+</merge>
