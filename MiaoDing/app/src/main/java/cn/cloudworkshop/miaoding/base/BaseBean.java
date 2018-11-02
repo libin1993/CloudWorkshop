@@ -10,6 +10,7 @@ import java.io.Serializable;
 public class BaseBean<T> implements Serializable {
     private int code;
     private T data;
+
     private String msg;
 
     public T getData() {

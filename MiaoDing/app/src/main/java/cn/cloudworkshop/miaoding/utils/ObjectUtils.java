@@ -9,7 +9,6 @@ import java.util.List;
  */
 public class ObjectUtils {
     public static <T> boolean isNotNull(List<T> list) {
-
         return list != null && list.size() > 0;
     }
 }

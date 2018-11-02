@@ -42,7 +42,6 @@ public class MyRefreshHeader extends LinearLayout implements RefreshHeader {
     }
 
     private void initView(Context context) {
-
         LinearLayout view = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.widget_gifview,this);
         gifView = view.findViewById(R.id.gif_view);
     }
@@ -109,3 +108,4 @@ public class MyRefreshHeader extends LinearLayout implements RefreshHeader {
 
     }
 }
+

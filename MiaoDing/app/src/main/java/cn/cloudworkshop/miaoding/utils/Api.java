@@ -1,6 +1,7 @@
 package cn.cloudworkshop.miaoding.utils;
 
 
+import cn.cloudworkshop.miaoding.bean.GoodsBean;
 import io.reactivex.Observable;
 import okhttp3.MultipartBody;
 import retrofit2.Call;
@@ -15,18 +16,9 @@ import retrofit2.http.Query;
  * Describe：
  */
 public interface Api {
-//    @GET("index.php/index/index5_4/goods_list")
-//    Call<GoodsBean> getGoods(@Query("type") int type, @Query("classify_id") int classifyId, @Query("page") int page);
-//
-//
-//    @GET("index.php/index/index5_4/goods_list")
-//    Observable<TestBean> getData(@Query("type") int type, @Query("classify_id") int classifyId, @Query("page") int page);
-//
-//
-//    @GET("index.php/index/index5_4/goods_list")
-//    Observable<GoodsBean> initData(@Query("type") int type, @Query("classify_id") int classifyId, @Query("page") int page);
-//
-//
-//    @POST("user/together/uploads")
-//    Observable<String> upload(@Body MultipartBody multipartBody);
+    @GET("index.php/index/index5_4/goods_list")
+    Observable<GoodsBean> getData(@Query("type") int type, @Query("classify_id") int classifyId, @Query("page") int page);
 }
+
+
+
